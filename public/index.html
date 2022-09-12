@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="list">
+    <li class="item" data-testid="menu-item-1">Menu 1</li>
+    <li class="item" data-testid="menu-item-2">Menu 2</li>
+    <li class="item" data-testid="menu-item-3">Menu 3</li>
+    <li class="item" data-testid="menu-item-4">Menu 4</li>
+    <li class="item" data-testid="menu-item-5">Menu 5</li>
+  </ul>
+  <script>
+    const items = document.querySelectorAll('.list .item');
+
+    items.forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.target.setAttribute('data-clicked', true);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "learning-cypress",
+  "version": "0.1.0",
+  "description": "Getting started with Cypress",
+  "main": "index.js",
+  "repository": "https://github.com/edvaldoszy/learning-cypress.git",
+  "author": "Edvaldo Szymonek <edvaldoszy@gmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "start": "cypress open",
+    "serve:public": "serve public -p 8080"
+  },
+  "dependencies": {
+    "cypress": "10.7.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/parser": "5.36.2",
+    "eslint": "8.23.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-import": "2.26.0",
+    "serve": "14.0.1",
+    "typescript": "4.8.3"
+  }
+}
